@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio Website - by suraj</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="jquery-3.6.4.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/8651475575.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        .scroll_to_top {
+            width: 60px;
+            height: 60px;
+            position: fixed;
+            text-align: center;
+            right: 30px;
+            bottom: 85px;
+        }
+
+        .scroll_to_top img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- nav bar & banner -->
+
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">SURAJ</div>
+                <ul id="sidemenu">
+                    <li> <a href="#header"> Home </a> </li>
+                    <li> <a href="#about"> About </a> </li>
+                    <li> <a href="#services"> Services </a> </li>
+                    <li> <a href="#portfolio"> Portfolio </a> </li>
+                    <li> <a href="#contact"> Contact </a> </li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p> Hi, My Name Is <span> suraj </span> <br> and I am a </p>
+                <span id="element"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/newuser.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About </h1>
+                    <p> To find and Internship job as a <Span> Graphic </Span> & <span> Web Designer </span> to improve
+                        my skills in creative technology and maximize to my skills giving my contribution to the company
+                        as much as i able to give.
+                        As a Graphic & Web designer is to make a positive impact on client , co -worker and the interest
+                        using my skills and experience to design compelling and attractive website.</p>
+
+                    <div class="tabs">
+                        <div class="tab-list">
+                            <a class="tab active" href="#one"> Skills </a>
+                            <a class="tab" href="#two"> Education </a>
+                            <a class="tab" href="#three"> Experience </a>
+                        </div>
+
+                        <div id="one" class="tab-content show">
+                            <ul>
+                                <li> <span> Graphic Design </span> <br> Banner Designing / Instagram Post / Typography / After Effect</li>
+                                <li> <span> Website Design </span> <br> HTML5 / CSS3 / WordPress /JavaScript
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div id="two" class="tab-content">
+                            <ul>
+                                <li> <span> Arena Animation South Extn. (2021 - Present) </span> <br> Graphic Web
+                                    Designing and Development </li>
+                                <li> <span> Bachelor of Arts (2020 - 2024) </span> <br> SOL Delhi University </li>
+                                <li> <span> 10th C.B.S.E Board </span> <br> Year of Passing : 2018 </li>
+                                <li> <span> 12th C.B.S.E Board </span> <br> Year of Passing : 2020 </li>
+                            </ul>
+                        </div>
+
+                        <div id="three" class="tab-content">
+                            <ul>
+                                <li> FRESHER </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+
+    <div id="services">
+        <div class="container">
+            <h1>
+                <div class="sub-title"> My Services </div>
+            </h1>
+
+            <div class="row">
+
+                <div class="box1">
+                    <div class="psicon"><img src="images/ps.png">
+                        <span>
+                            <p>Graphic Design </p>
+                        </span>
+                        <p> Creative and detail-oriented graphic designer with exceptional skill level and experience in various mediums, such as vector art, Highly adept with programs in Adobe suite, such as Photoshop, Illustrator and After Effect..</p>
+                    </div>
+                </div>
+                <div class="box2">
+                    <div class="aiicon"><img src="images/html.png">
+                        <span>
+                            <p>Web Design </p>
+                        </span>
+                        <p> Highly seasoned and reliable Entry Level Web Designer with a strong work ethic and customer service and satisfaction record. Adept multitasker capable of bringing simultaneous web page creation and repair projects to completion with full accuracy and efficiency. </p>
+                    </div>
+                </div>
+                <div class="box3">
+                    <div class="webdesign"><img src="images/ai.png">
+                        <span>
+                            <p>WordPress Design </p>
+                        </span>
+                        <p> Proficient and creative WordPress developer with a strong history in website management and development.Expert in all aspects of WordPress website creation, including design, plug-ins and implementation. Skilled in creating engaging and interactive websites.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact me  -->
+
+    <div id="contact" style="margin:100px 0 0 0 ;">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"> Contact Me </h1>
+                    <p> <i class="fa-solid fa-envelope"> </i> jay20160058@gmail.com </p>
+                    <p> <i class="fa-solid fa-phone"> </i> +91 9911917231 </p>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i
+                                class="#"></i> </a>
+                        <a href="#" target="_blank"><i
+                                class="#"></i> </a>
+                        <a href="#" target="_blank"><i
+                                class="#"></i> </a>
+                        <a href=""><i class="#"></i> </a>
+                    </div>
+                    <a href="" download class="btn"> <i class="fa-solid fa-circle-arrow-down"></i>Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form action="submit.html" autocomplete="off" method="post" target="_blank">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn2"> Submit </button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p> Designed And Developed By suraj </p>
+        </div>
+    </div>
+
+    <a href="#" id="#home" class="scroll_to_top"> <img src="images/scroll_to_top.png"> </a>
+
+
+
+
+
+
+
+
+    <!-- Type.js amimate text-->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Graphic Designer', 'Search Engine Optimization', 'Web Designer'],
+            typeSpeed: 100,
+        });
+
+        //tab button link
+
+        $(".tab-list").on("click", ".tab", function (e) {
+            e.preventDefault();
+            $(".tab").removeClass("active");
+            $(".tab-content").removeClass("show");
+            $(this).addClass("active");
+            $($(this).attr("href")).addClass("show");
+        });
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>
